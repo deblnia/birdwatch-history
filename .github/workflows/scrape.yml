@@ -14,8 +14,8 @@ jobs:
       uses: actions/checkout@v2
     - name: Fetch latest data
       run: |-
-        curl https://ton.twimg.com/birdwatch-public-data/notes/BVPTD42JNNCJXC6THMYSCDCJPQUPKN0BBRL16NZUPWMVHDSREKAPHP3DT99G/notes-00000.tsv > notes.csv
-        curl https://ton.twimg.com/birdwatch-public-data/noteRatings/BVPTD42JNNCJXC6THMYSCDCJPQUPKN0BBRL16NZUPWMVHDSREKAPHP3DT99G/ratings-00000.tsv > ratings.csv
+        curl https://ton.twimg.com/birdwatch-public-data/notes/BVPTD42JNNCJXC6THMYSCDCJPQUPKN0BBRL16NZUPWMVHDSREKAPHP3DT99G/notes-00000.tsv > notes.tsv
+        curl https://ton.twimg.com/birdwatch-public-data/noteRatings/BVPTD42JNNCJXC6THMYSCDCJPQUPKN0BBRL16NZUPWMVHDSREKAPHP3DT99G/ratings-00000.tsv > ratings.tsv
     - name: Commit and push if it changed
       run: |-
         git config user.name "Automated"
