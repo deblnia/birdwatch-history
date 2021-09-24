@@ -1,2 +1,2 @@
 # birdwatch-history
-Public data from Birdwatch, archived. 
+Public data from Birdwatch, archived.
